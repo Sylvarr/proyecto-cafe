@@ -15,7 +15,7 @@
   --max-width: 1200px;
   --relleno-escritorio: 48px 64px;
   --relleno-movil: 28px 16px;
-  --separacion-secciones: 48px;
+  --separacion-secciones: 36px;
   --separacion-secciones-movil: 32px;
 }
 
@@ -30,7 +30,7 @@
 
 h1 {
   font-family: var(--font-title);
-  margin-bottom: 40px;
+  margin-bottom: var(--separacion-secciones);
 }
 
 h3 {
@@ -178,6 +178,10 @@ footer p {
 
 .nombres-mobile {
   display: none;
+}
+
+.coffee-map-section {
+  display: flex;
 }
 
 /* móvil */

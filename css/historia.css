@@ -1,0 +1,88 @@
+main h1::after,
+main h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-top: 8px;
+}
+
+.hero {
+  margin-top: var(--separacion-secciones);
+  margin-bottom: var(--separacion-secciones);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 7px 14px -6px rgba(33, 33, 33, 0.86);
+  box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
+}
+
+h2 {
+  font-family: var(--font-title);
+  margin-bottom: var(--separacion-secciones);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 7px 14px -6px rgba(33, 33, 33, 0.86);
+  box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.coffee-map-section {
+  display: flex;
+  gap: 2rem;
+}
+
+.coffee-map-section div {
+  text-align: justify;
+  flex: 1;
+}
+
+.coffee-map-section img {
+  width: 30%;
+}
+
+.mapa-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .coffee-map-section {
+    flex-direction: column;
+  }
+
+  .coffee-map-section img {
+    width: 100%;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .hero img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mapa-desktop {
+    display: none;
+  }
+
+  .mapa-mobile {
+    display: block;
+    margin-bottom: var(--separacion-secciones-movil);
+    margin-top: 10px;
+  }
+}
