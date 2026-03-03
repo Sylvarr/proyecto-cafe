@@ -9,7 +9,7 @@
   --bg: #faf7f2;
   --card-bg: #ffffff;
   --card-border: #e0e0e0;
-  --table-alt: #F5F3EE;
+  --table-alt: #f5f3ee;
   --font-title: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
   --max-width: 1200px;
@@ -162,44 +162,6 @@ main {
   flex: 1;
 }
 
-.hero {
-  margin-top: var(--separacion-secciones);
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  -webkit-box-shadow: 5px 7px 14px -6px rgba(33, 33, 33, 0.86);
-  box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
-}
-
-.icono-card {
-  width: 48px !important;
-  height: 48px;
-}
-
-.tarjetas {
-  margin-top: var(--separacion-secciones);
-  text-align: center;
-  font-size: 14px;
-  display: flex;
-  gap: 20px;
-}
-
-.tarjeta {
-  border: 1px solid #e0e0e0;
-  padding: 20px;
-  border-radius: 8px;
-  -webkit-box-shadow: 5px 7px 14px -6px rgba(33, 33, 33, 0.86);
-  box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
-}
-
-h3 {
-  margin: 15px;
-}
-
 footer {
   text-align: center;
   background-color: var(--primary);
@@ -266,56 +228,19 @@ footer p {
     text-align: center;
   }
 
-  .tarjetas {
-    display: flex;
-    flex-direction: column;
-  }
-
   main {
     padding: var(--relleno-movil);
     padding-bottom: var(--separacion-secciones-movil);
   }
 
-  .hero {
-    margin-top: var(--separacion-secciones-movil);
-  }
-
-  .tarjetas {
-    margin-top: var(--separacion-secciones-movil);
-  }
-
   h1 {
+    font-size: 24px;
     margin-bottom: 24px;
   }
 
   p {
     text-align: justify;
     line-height: 1.5;
-  }
-
-  img {
-    height: 200px !important;
-    object-fit: cover;
-  }
-
-  .icono-card {
-    width: 30px !important;
-    height: 30px;
-  }
-
-  h3 {
-    margin: 10px;
-  }
-
-  .tarjeta p {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  p {
     font-size: 14px;
   }
 
