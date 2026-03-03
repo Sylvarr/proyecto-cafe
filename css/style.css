@@ -1,25 +1,32 @@
 /* variables globales */
 :root {
-  --primary:     #1a1a1a;
-  --nav-bg:      #2a2a2a;
-  --accent:      #bf360c;
-  --text-light:  #ffffff;
-  --text-muted:  rgba(255, 255, 255, 0.6);
-  --text-main:   #333333;
-  --bg:          #faf7f2;
-  --card-bg:     #ffffff;
+  --primary: #1a1a1a;
+  --nav-bg: #2a2a2a;
+  --accent: #bf360c;
+  --text-light: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-main: #333333;
+  --bg: #faf7f2;
+  --card-bg: #ffffff;
   --card-border: #e0e0e0;
-  --table-alt:   #f5f5f5;
-  --font-title:  "Playfair Display", serif;
-  --font-body:   "Inter", sans-serif;
-  --max-width:   1000px;
+  --table-alt: #f5f5f5;
+  --font-title: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --max-width: 1000px;
 }
 
 /* reset básico */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  margin-bottom: 40px;
 }
 
 body {
@@ -91,7 +98,9 @@ ul {
   height: 2px;
   background: var(--text-light);
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.2s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.2s ease;
 }
 
 /* animación hamburguesa → X */
@@ -141,9 +150,16 @@ main {
   padding: 40px 20px;
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
 /* móvil */
 @media (max-width: 768px) {
-
   .btn-menu {
     display: flex;
   }
@@ -188,5 +204,4 @@ main {
     letter-spacing: 0;
     text-align: center;
   }
-
 }
