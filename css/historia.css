@@ -53,3 +53,36 @@ p {
 .coffee-map-section img {
   width: 30%;
 }
+
+.mapa-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .coffee-map-section {
+    flex-direction: column;
+  }
+
+  .coffee-map-section img {
+    width: 100%;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .hero img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mapa-desktop {
+    display: none;
+  }
+
+  .mapa-mobile {
+    display: block;
+    margin-bottom: var(--separacion-secciones-movil);
+    margin-top: 10px;
+  }
+}
