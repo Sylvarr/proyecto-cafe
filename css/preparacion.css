@@ -1,0 +1,44 @@
+/*Estilo de la sección preparación:*/
+.preparacion{
+    max-width: var(--max-width);
+    margin: var(--separacion-secciones) auto;
+    padding: 40px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    font-family: var(--font-body);
+}
+.preparacion h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin-top: 8px;
+}
+.preparacion h1{
+    color: var(--primary);
+    font-family: var(--font-title);
+    font-size: 32px;
+}
+.preparacion p{
+    margin-bottom: 30px;
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+}
+/*Estilo lista desordenada:*/
+.lista-metodos{
+    list-style-type: square;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.lista-metodos li{
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
