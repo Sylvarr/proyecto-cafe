@@ -8,6 +8,14 @@
     border: 1px solid var(--card-border);
     border-radius: 8px;
 }
+.tipos-de-cafe h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin-top: 8px;
+}
 .tipos-de-cafe h1{
     margin-bottom: 20px;
     color: var(--text-main);
