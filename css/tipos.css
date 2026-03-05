@@ -74,7 +74,7 @@
     box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
 }
 /*Para móvil:*/
-@media (max-width:768px){
+@media (max-width:760px){
     .tipos-de-cafe{
         width: 100%;
         margin: var(--separacion-secciones-movil) 0;
