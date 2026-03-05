@@ -76,6 +76,11 @@
 
 /*Para móvil:*/
 @media (max-width: 768px){
+    main{
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
     .tipos-de-cafe{
         width: calc(100% - 32px) !important;
         margin: var(--separacion-secciones-movil) 16px !important;
