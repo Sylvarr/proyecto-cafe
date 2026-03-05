@@ -82,8 +82,8 @@
         overflow-x: hidden;
     }
     .tipos-de-cafe{
-        width: calc(100% - 32px) !important;
-        margin: var(--separacion-secciones-movil) 16px !important;
+        width: 100% !important;
+        margin: var(--separacion-secciones-movil)0 !important;
         padding: 16px !important;
         box-sizing: border-box !important;
         border-left: none;
