@@ -77,16 +77,16 @@
 /*Para móvil:*/
 @media (max-width: 768px){
     .tipos-de-cafe{
-        width: 100% !important;
-        margin: var(--separacion-secciones-movil) 0 !important;
+        width: calc(100% - 32px) !important;
+        margin: var(--separacion-secciones-movil) 16px !important;
         padding: 16px !important;
         box-sizing: border-box !important;
-        border-left: none !important;
-        border-right: none !important;
+        border-left: none;
+        border-right: none;
         overflow: hidden;
     }
     .tabla-contenedor{
-        width: 100% !important;
+        width: 100%;
         overflow-x: auto;
         display: block;
         margin: 20px 0;
@@ -115,6 +115,5 @@
     .imagen-granos img{
         height: 200px;
         width: 100%;
-        object-fit: cover;
     }
 }
