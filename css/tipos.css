@@ -82,6 +82,8 @@
         box-sizing: border-box;
         border-left: none;
         border-right: none;
+        border-radius: 0;
+        overflow: hidden;
     }
     .tabla-contenedor{
         width: 100%;
