@@ -74,9 +74,9 @@
     box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
 }
 /*Para móvil:*/
-@media (max-width:760px){
+@media (max-width: 768px){
     .tipos-de-cafe{
-        width: 100%;
+        width: 100% !important;
         margin: var(--separacion-secciones-movil) 0;
         padding: 16px;
         box-sizing: border-box;
@@ -88,15 +88,17 @@
     .tabla-contenedor{
         width: 100%;
         overflow-x: auto;
-        margin: 20px 0;
         display: block;
     }
     .tipos{
         width: 100%;
+        min-width: 400px;
+        table-layout: auto;
     }
     .tipos td, .tipos th{
         word-break: normal;
         white-space: normal;
+        padding: 8px;
     }
     .tipos-de-cafe h1{
         font-size: 24px;

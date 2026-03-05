@@ -57,7 +57,7 @@
     box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
 }
 /*Para móvil:*/
-@media (max-width: 760px){
+@media (max-width: 768px){
     .preparacion{
         width: 100%;
         margin: var(--separacion-secciones-movil) 0;
