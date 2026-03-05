@@ -75,9 +75,24 @@
 }
 /*Para móvil:*/
 @media (max-width:768px){
-    .tipos{
-        display: block;
+    .tabla-contenedor{
+        width: 100%;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .tipos{
+        min-width: 600px;
+    }
+    .tipos-de-cafe{
+        padding: 16px;
+        margin: 24px 10px;
+        width: auto;
+    }
+    .tipos-de-cafe h1{
+        font-size: 24px;
+    }
+    .tipos-de-cafe p{
+        font-size: 14px;
     }
     .imagen-granos img{
         height: 200px;
