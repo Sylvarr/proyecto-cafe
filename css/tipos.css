@@ -73,6 +73,9 @@
     display: block;
     box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
 }
+body, html{
+    overflow-x: hidden;
+}
 /*Para móvil:*/
 @media (max-width: 768px){
     .tipos-de-cafe{
@@ -83,7 +86,6 @@
         box-sizing: border-box;
         border-left: none;
         border-right: none;
-        border-radius: 0;
         overflow: hidden;
     }
     .tabla-contenedor{
