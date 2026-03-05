@@ -73,14 +73,11 @@
     display: block;
     box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
 }
-body, html{
-    overflow-x: hidden;
-}
+
 /*Para móvil:*/
 @media (max-width: 768px){
     .tipos-de-cafe{
         width: 100% !important;
-        max-width: 100vw;
         margin: var(--separacion-secciones-movil) 0;
         padding: 16px;
         box-sizing: border-box;
@@ -96,8 +93,8 @@ body, html{
     }
     .tipos{
         width: 100%;
-        table-layout: auto;
-        margin: 0;
+        min-width: 350px;
+        border-collapse: collapse;
     }
     .tipos td, .tipos th{
         word-break: normal;
