@@ -87,6 +87,7 @@
         width: 100%;
         overflow-x: auto;
         margin: 20px 0;
+        display: block;
     }
     .tipos{
         width: 100%;
