@@ -75,18 +75,24 @@
 }
 /*Para móvil:*/
 @media (max-width:768px){
+    .tipos-de-cafe{
+        width: 100%;
+        margin: var(--separacion-secciones-movil) 0;
+        padding: 16px;
+        box-sizing: border-box;
+        border-left: none;
+        border-right: none;
+    }
     .tabla-contenedor{
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        margin: 20px 0;
     }
     .tipos{
-        min-width: 600px;
+        width: 100%;
     }
-    .tipos-de-cafe{
-        padding: 16px;
-        margin: 24px 10px;
-        width: auto;
+    .tipos td, .tipos th{
+        word-break: break-word;
     }
     .tipos-de-cafe h1{
         font-size: 24px;
