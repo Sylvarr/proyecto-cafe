@@ -88,22 +88,12 @@
         box-sizing: border-box !important;
         border-left: none;
         border-right: none;
-        overflow: hidden;
     }
-    .tabla-contenedor{
-        width: 100%;
-        overflow-x: auto;
-        display: block;
-        margin: 20px 0;
+    .tipos th:nth-child(2),
+    .tipos td:nth-child(2) {
+        display: none;
     }
-    .tipos{
-        width: 100%;
-        min-width: 400px;
-        border-collapse: collapse;
-    }
-    .tipos td, .tipos th{
-        word-break: normal;
-        white-space: normal;
+    .tipos td, .tipos th {
         padding: 8px;
         font-size: 13px;
     }
