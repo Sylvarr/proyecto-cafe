@@ -1,16 +1,18 @@
-/*Imagen de cabecera*/
+/* Imagen de cabecera */
 .imagen-cabecera {
-    background-image: url('../imagenes/paises/tueste.jpg');
+    background-image: url('../imagenes/paises/paisaje.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    .hero-texto h1 {
+}
+
+.hero-texto h1 {
     color: white;
 }
-}
+
 /* Tarjeta principal */
 .tarjeta {
     background-color: var(--card-bg);
@@ -19,6 +21,7 @@
     padding: 40px;
     margin-top: 40px;
 }
+
 /* Línea dorada decorativa */
 .linea-acento {
     width: 60px;
@@ -26,6 +29,7 @@
     background-color: var(--accent);
     margin-bottom: 32px;
 }
+
 /* Grid de países en 2 columnas */
 .cajas-paises {
     display: grid;
@@ -33,6 +37,7 @@
     gap: 32px;
     margin-bottom: 40px;
 }
+
 /* Bloques país */
 .pais h3 {
     font-family: var(--font-title);
@@ -60,10 +65,17 @@
     color: var(--text-muted);
     margin-top: 8px;
 }
+
 /* Móvil */
 @media (max-width: 768px) {
     .imagen-cabecera {
         height: 200px;
+    }
+
+    .hero-texto h1 {
+        font-size: 22px;
+        text-align: center;
+        padding: 0 16px;
     }
 
     .cajas-paises {
@@ -72,5 +84,9 @@
 
     .tarjeta {
         padding: 20px;
+    }
+
+    .foto-paises img {
+        margin-top: 16px;
     }
 }
