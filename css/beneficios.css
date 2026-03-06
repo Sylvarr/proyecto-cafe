@@ -1,0 +1,95 @@
+
+/* Tarjeta */
+.tarjeta {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+/* Línea dorada */
+.linea-acento {
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+/* Texto introductorio */
+.seccion-beneficios p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* Tabla de mitos */
+.tabla-mitos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.tabla-mitos th {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabla-mitos td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.tabla-mitos tbody tr:nth-child(even) {
+    background-color: var(--table-alt);
+}
+
+/* Foto de beneficios */
+.foto-beneficios img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.foto-beneficios figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+/* Animación fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .tarjeta {
+        padding: 20px;
+    }
+
+    .tabla-mitos {
+        font-size: 12px;
+    }
+
+    .tabla-mitos th,
+    .tabla-mitos td {
+        padding: 8px;
+    }
+}
