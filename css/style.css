@@ -81,11 +81,16 @@ ul {
 }
 
 .titulo-web {
-  font-family: var(--font-title);
+  font-family: var(--font-title), serif;
   font-size: 36px;
   font-weight: 700;
   color: var(--text-light);
   letter-spacing: -1px;
+  transition: all 0.3s ease;
+}
+
+.titulo-bloque:hover .titulo-web {
+  color: var(--accent) !important;
 }
 
 .subtitulo-web {
