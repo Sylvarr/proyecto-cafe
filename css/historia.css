@@ -45,7 +45,13 @@ p {
 /* Sección del mapa */
 .coffee-map-section {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+}
+
+.coffee-map-section > h2 {
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .coffee-map-section div {
@@ -55,6 +61,8 @@ p {
 
 .coffee-map-section img {
   width: 30%;
+  max-height: 450px;
+  object-fit: cover;
 }
 
 .mapa-mobile {
