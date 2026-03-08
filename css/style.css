@@ -37,6 +37,10 @@ h2 {
   font-family: var(--font-title);
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--text-main);
@@ -77,11 +81,16 @@ ul {
 }
 
 .titulo-web {
-  font-family: var(--font-title);
+  font-family: var(--font-title), serif;
   font-size: 36px;
   font-weight: 700;
   color: var(--text-light);
   letter-spacing: -1px;
+  transition: all 0.3s ease;
+}
+
+.titulo-bloque:hover .titulo-web {
+  color: var(--accent) !important;
 }
 
 .subtitulo-web {
@@ -156,6 +165,7 @@ ul {
 
 /* contenido principal */
 main {
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--relleno-escritorio);
@@ -182,6 +192,124 @@ footer p {
 
 .coffee-map-section {
   display: flex;
+}
+
+.cabecera-pagina {
+  --cabecera-font-size: 32px;
+
+  font-size: var(--cabecera-font-size);
+  margin-bottom: calc(var(--cabecera-font-size) * .75);
+
+  color: var(--primary);
+  font-family: var(--font-title), serif;
+}
+
+.cabecera-pagina-sm {
+  --cabecera-font-size: 24px;
+}
+.cabecera-pagina::after{
+  width: calc(var(--cabecera-font-size) * 2);
+  margin-top: calc(var(--cabecera-font-size) * .25);
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--accent);
+}
+
+.caja-seccion {
+  --current-padding: 32px;
+
+  padding: var(--current-padding);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+}
+
+.caja-seccion + .caja-seccion {
+  margin-top: var(--current-padding);
+}
+
+.spaced-list {
+  list-style: initial;
+  margin-left: 20px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+ul.bulled-list{
+  list-style: disc;
+}
+
+ol.spaced-list{
+  list-style: decimal;
+}
+
+.color-accent,
+.link {
+  color: var(--accent);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 80px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  row-gap: 32px;
+  column-gap: 20px;
+  margin-top: 20px;
+  font-size: 14px ;
+}
+
+.team-member {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.icon-list {
+  display: grid;
+  gap: 12px;
+}
+
+.icon-list-item {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-size {
+  --icon-size: 28px;
+
+  min-width: var(--icon-size);
+  width: var(--icon-size) !important;
+  height: var(--icon-size);
+}
+
+.icon-size-lg {
+  --icon-size: 48px;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-8 {
+  gap: 32px;
 }
 
 /* móvil */
@@ -266,5 +394,17 @@ footer p {
     display: block;
     color: var(--text-muted);
     text-align: center;
+  }
+
+  .caja-seccion {
+    --current-padding: 16px;
+  }
+
+  .icon-size {
+    --icon-size: 24px;
+  }
+
+  .icon-size-lg {
+    --icon-size: 30px;
   }
 }
