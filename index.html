@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/inicio.css">
     <script src="js/nav.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
@@ -54,10 +55,10 @@
           experiencia única.
         </p>
       </section>
-      <div class="hero">
-        <img src="imagenes/intro_historia/portada.jpg" alt="">
+      <div class="hero" data-tilt data-tilt-max="2" data-tilt-speed="1500" data-tilt-perspective="800">
+        <img src="imagenes/intro_historia/portada.jpg" alt="Taza de café sobre una mesa de madera">
       </div>
-      <section class="tarjetas">
+      <div class="tarjetas">
         <a href="tipos.html" class="tarjeta tarjeta-centrada">
           <i data-lucide="coffee" class="icon-size icon-size-lg"></i>
           <h2>Tipos de café</h2>
@@ -82,7 +83,7 @@
             más popular del mundo.
           </p>
         </a>
-      </section>
+      </div>
     </main>
     <footer>
       <p>Proyecto grupal - Lenguajes de Marcas - DAW</p>

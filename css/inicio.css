@@ -2,8 +2,11 @@ p {
   line-height: 1.5;
 }
 
+/* Hero */
 .hero {
   margin-top: var(--separacion-secciones);
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .hero img {
@@ -18,6 +21,7 @@ p {
   box-shadow: 5px 7px 14px -6px rgba(28, 28, 28, 0.86);
 }
 
+/* Tarjetas */
 .tarjetas {
   margin-top: var(--separacion-secciones);
   font-size: 14px;
@@ -58,6 +62,14 @@ a.tarjeta:hover {
   margin: -20px -20px 0;
   position: relative;
   z-index: 1;
+}
+
+.tarjeta img.img-top {
+  object-position: center 5%;
+}
+
+.tarjeta img.img-top-latte {
+  object-position: center 15%;
 }
 
 .tarjeta:before {
